@@ -24,7 +24,7 @@ analyzeCommits:
     releaseRules:
     - type: "feat"
       release: "minor"
-    - type: "hotfix"
+    - type: "fix"
       release: "patch"
     - type: "docs"
       release: "patch"
