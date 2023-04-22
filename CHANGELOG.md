@@ -1,5 +1,17 @@
 Simon Castellanos NTT DATA
 
+# [3.0.0](https://github.com/scastellanos77/SemanticDemo_1/compare/v2.0.0...v3.0.0) (2023-04-22)
+
+
+### Code Refactoring
+
+* **resource:** se agrega nueva linea a testfile1 ([aef6609](https://github.com/scastellanos77/SemanticDemo_1/commit/aef66092b83cbf0e7b301e80d99d3560b2cfc785))
+
+
+### BREAKING CHANGES
+
+* **resource:** Cambios para version 3
+
 # [2.0.0](https://github.com/scastellanos77/SemanticDemo_1/compare/v1.1.1...v2.0.0) (2023-04-22)
 
 
