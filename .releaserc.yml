@@ -1,0 +1,47 @@
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - - "@semantic-release/changelog"
+    - changelogFile: docs/CHANGELOG.md
+      changelogTitle: Simon Castellanos NTT DATA
+  - - "@semantic-release/exec"
+    - verifyReleaseCmd: echo ${nextRelease.version} > VERSION.txt
+  - - "@semantic-release/git"
+    - assets: 
+        - docs/CHANGELOG.md
+        - VERSION.txt
+      message: |- 
+        RELEASE: ${nextRelease.version} [skip ci]
+        
+        ${nextRelease.notes}
+  - "@semantic-release/github"
+
+verifyConditions:
+  - '@semantic-release/git'
+  - "@semantic-release/github"
+analyzeCommits:
+  - path: "@semantic-release/commit-analyzer"
+    releaseRules:
+    - type: "feat"
+      release: "minor"
+    - type: "hotfix"
+      release: "patch"
+    - type: "docs"
+      release: "patch"
+    - type: "refactor"
+      release: "minor"
+    - type: "breaking"
+      release: "major"
+
+branches:
+  - name: 'master'
+  - name: 'next'
+  - name: 'develop'
+  - name: 'origin/develop'
+  
+  # - name: '(fix-)(\/[0-9A-Za-z-]+)'
+  # - name: '(feat-)(\/[0-9A-Za-z-]+)'
+  - name: '(release)(\/[0-9A-Za-z-]+)'
+    prerelease: 'rc'
+   # gitlabUrl: 'git@192.168.50.33:simon/ntt-demo-6.git' # your gitlab url
+    
