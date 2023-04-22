@@ -1,5 +1,12 @@
 Simon Castellanos NTT DATA
 
+# [1.1.0](https://github.com/scastellanos77/SemanticDemo_1/compare/v1.0.1...v1.1.0) (2023-04-22)
+
+
+### Features
+
+* Se agrega el archivo testfile1 ([bd0daa7](https://github.com/scastellanos77/SemanticDemo_1/commit/bd0daa7a44d9753a9ccfd5b0d4b5319bfe815185))
+
 ## [1.0.1](https://github.com/scastellanos77/SemanticDemo_1/compare/v1.0.0...v1.0.1) (2023-04-22)
 
 
