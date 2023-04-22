@@ -28,10 +28,7 @@ analyzeCommits:
       release: "patch"
     - type: "docs"
       release: "patch"
-   # - type: "refactor"
-    #  release: "refactor"
-    - type: "BREAKING CHANGE"
-      release: "major"
+
 
 branches:
   - name: 'master'
