@@ -1,5 +1,17 @@
 Simon Castellanos NTT DATA
 
+# [2.0.0](https://github.com/scastellanos77/SemanticDemo_1/compare/v1.1.1...v2.0.0) (2023-04-22)
+
+
+### Code Refactoring
+
+* **resource:** rename useguidedfailure argument on environment resource ([2721611](https://github.com/scastellanos77/SemanticDemo_1/commit/2721611406067b24f6622724bccc0e9e57ec5420))
+
+
+### BREAKING CHANGES
+
+* **resource:** The useguidedfailure argument has been renamed use_guided_failure in the octopusdeploy_environment
+
 ## [1.1.1](https://github.com/scastellanos77/SemanticDemo_1/compare/v1.1.0...v1.1.1) (2023-04-22)
 
 
