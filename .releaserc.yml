@@ -2,13 +2,13 @@ plugins:
   - "@semantic-release/commit-analyzer"
   - "@semantic-release/release-notes-generator"
   - - "@semantic-release/changelog"
-    - changelogFile: docs/CHANGELOG.md
+    - changelogFile: CHANGELOG.md
       changelogTitle: Simon Castellanos NTT DATA
   - - "@semantic-release/exec"
     - verifyReleaseCmd: echo ${nextRelease.version} > VERSION.txt
   - - "@semantic-release/git"
     - assets: 
-        - docs/CHANGELOG.md
+        - CHANGELOG.md
         - VERSION.txt
       message: |- 
         RELEASE: ${nextRelease.version} [skip ci]
