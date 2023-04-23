@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh '''
                 # Run optional required steps before releasing
-                npx semantic-release
+                npx semantic-release --no-ci --debug
                 '''
             }
         }
